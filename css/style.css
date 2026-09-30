@@ -1,0 +1,107 @@
+:root {
+    --cor-primaria: #2563EB;
+    --cor-primaria-escura: #1E40AF;
+    --cor-secundaria: #16A34A;
+    --cor-secundaria-escura: #15803D;
+    --cor-fundo: #F8FAFC;
+    --cor-superficie: #FFFFFF;
+    --cor-texto: #1E293B;
+    --cor-texto-secundario: #475569;
+
+    --fonte-xs: 0.75rem;
+    --fonte-sm: 0.875rem;
+    --fonte-md: 1rem;
+    --fonte-lg: 1.5rem;
+    --fonte-xl: 2rem;
+
+    --espaco-1: 0.25rem;
+    --espaco-2: 0.5rem;
+    --espaco-3: 0.75rem;
+    --espaco-4: 1rem;
+    --espaco-5: 1.5rem;
+    --espaco-6: 2rem;
+    --espaco-7: 3rem;
+    --espaco-8: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: var(--espaco-4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: var(--espaco-4);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espaco-6);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: var(--espaco-4);
+    background-color: var(--cor-texto);
+    color: white;
+}
+
+ .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    font-size: var(--fonte-sm);
+    font-weight: bold;
+}
+
+.alert {
+    padding: var(--espaco-4);
+    margin-top: var(--espaco-4);
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: 0.5rem;
+    background-color: var(--cor-superficie);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.10);
+}
+
+.toast {
+    position: fixed;
+    right: var(--espaco-4);
+    bottom: var(--espaco-4);
+    padding: var(--espaco-4);
+    background-color: var(--cor-texto);
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.20);
+}
