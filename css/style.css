@@ -76,7 +76,7 @@ footer {
     color: white;
 }
 
- .badge {
+.badge {
     display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
@@ -104,4 +104,30 @@ footer {
     color: white;
     border-radius: 0.5rem;
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.20);
+}
+
+/* Acessibilidade: destaque visual para navegação por teclado */
+nav a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+input:focus,
+button:focus-visible {
+    outline: 3px solid var(--cor-primaria);
+    outline-offset: 2px;
+}
+
+/* Responsividade em telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: var(--espaco-4);
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
