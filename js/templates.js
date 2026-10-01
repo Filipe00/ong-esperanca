@@ -63,3 +63,5 @@ function templateCadastro() {
         </section>
     `;
 }
+
+export { templateProjetos, templateInicio, templateCadastro };

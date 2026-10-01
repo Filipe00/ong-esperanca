@@ -1,3 +1,9 @@
+import {
+    templateProjetos,
+    templateInicio,
+    templateCadastro
+} from "./templates.js";
+
 const app = document.getElementById("app");
 
 function renderizarPagina() {
